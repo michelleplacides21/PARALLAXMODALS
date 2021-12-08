@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome icons-->
+    <script src="https://kit/fontawesome.com/6a79530112.js"
+    crossorigin="anonymous"></script>
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</style>
+
+    <title>parallax</title>
+</head>
+<body>
+
+    <nav>
+        <nav class="blue-darken-4">
+            <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><i class="material-icons">wifi</i>TECHNOLOGY</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+               <ul class="right hide-on-med-and-down">
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">COURSES</a></li>
+               <li><a href="#">ABOUT US</a></li>
+             </ul>
+            </div>
+            </div>
+            </nav>
+            </nav>
+
+    <!--SLIDE OUT/SLIDENAV-->
+
+   <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="photo1.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="michelle.jpg">
+    </a>
+      <a href="#name"><span class="black-text name">Michelle  Placides</span>
+    </a>
+      <a href="#email"><span class="grey-text email">Placides.michelle@gmail.com</span>
+    </a>
+    </div></li>
+
+    <li><a href="#!"><i class="material-icons">cloud </i>MyNetAcad
+    </a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>Resources
+    </a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>COURSES
+    </a></li>
+
+    <li><div class="divider"></div>
+    </li>
+    <li><a class="subheader">MORE</a>
+    </li>
+    <li><a class="waves-effect" href="#!">ABOUT US</a>
+    </li>
+  </ul>
+        
+
+
+
+<!--PARALLAX-->
+    <div class="parallax-container">
+        <div class="parallax"><img src="photo1.jpg"></div>
+      </div>
+      <div class="section white">
+        <div class="row container">
+          <h2 class="header">Empowering all people with career possibilities</h2>
+          <p class="grey-text text-darken-3 lighten-3">Cisco Networking Academy transforms the lives of learners, educators and communities through the power of technology, education and career opportunities. Available to anyone, anywhere.
+
+            We’re currently providing assistance for you to teach and learn remotely..</p>
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="photo1.jpg"></div>
+      </div>
+
+
+
+
+
+
+
+
+
+     <!--Jquery CDN-->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256=/xUj+30JU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+   $('.sidenav').sidenav();
+ });
+      
+
+   $(document).ready(function(){
+       $('.slidenav').slidenav();
+
+   });
+
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
+
+
+
+</script>
+</body>
+</html>
